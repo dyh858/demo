@@ -1,0 +1,23 @@
+
+Git安装
+    下载地址：git-scm.com 完成安装；
+Github注册
+    网址：github.com 注册 登录
+
+Git使用
+    Git只能操作文本文件，txt、html、css、js等等，追踪、监测到每一行。不能跟踪图片、视频。
+    建立一个文件夹
+    右键选择open git bash here，打开
+    1、初始化
+    git init
+    文件夹中会增加.git文件，如果没有，是文件夹设置中，查看选项里没有勾选隐藏项目
+    2、查看
+    ls 或者 ls -ah 、 ls -a、ls -h 都可以查看
+    3、添加文件到仓库
+    git add 文件名   例如：git add note.txt
+
+
+  
+
+
+

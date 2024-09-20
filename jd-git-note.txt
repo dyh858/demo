@@ -48,6 +48,9 @@ Git使用
     git remote rm origin
     10、推送
     git push -u hello main
+    11、从github拉取
+    git pull hello main
+    
    
 
 

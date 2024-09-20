@@ -48,8 +48,12 @@ Git使用
     git remote rm origin
     10、推送
     git push -u hello main
-    11、从github拉取
+    11、克隆一个github到本地
+	git clone https://github.com/dyh858/demo.git
+	克隆下来的远程分支后，查看一下远程分支和本地分支
+	12、从github拉取
     git pull hello main
+	
     
    
 

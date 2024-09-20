@@ -14,7 +14,44 @@ Git使用
     2、查看
     ls 或者 ls -ah 、 ls -a、ls -h 都可以查看
     3、添加文件到仓库
-    git add 文件名   例如：git add note.txt
+    git add 文件名   例如：git add note.txt  延展：git add 文件的前一个或者几个，再按tab键，自动完成
+    git add .. 添加所有文件
+    回车后没有响应，就是成功
+    4、提交
+    git commit -m 备注  例如：git commit -m "this is first commit"
+    回车后有提示，如果是第一次，要提示你：
+    Author identity unknown 作者身份未知
+    *** Please tell me who you are  告诉我你是谁
+    Run 运行
+      git config --global user.email "you@example.com"
+      git config --global user.name "Your name"
+    to set your account's default identity  去设置你的账户的默认身份
+    Omit --global to set the identity only in this repository.  省略 --global 只在这个仓库设置身份
+    fatal：unable to auto-detect email address. 失败：未能自动设置邮箱地址
+    
+    重新输入：
+    git config --global user.email "dyh858@163.com"
+    git config --global user.name "dyh858"
+    回车后再提交
+    git commit -m "this is first commit"
+    5、建立仓库
+    在github里面建立仓库
+    6、改变当前分支名称
+    git branch -M main
+    7、查看分支
+    git branch
+    8、连接github
+    git remote add origin https://github.com/dyh858/demo.git
+    查看github连接 的分支
+    git remote 
+    删除github连接的分支
+    git remote rm origin
+    10、推送
+    git push -u hello main
+   
+
+
+
 
 
   

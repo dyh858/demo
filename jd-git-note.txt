@@ -10,11 +10,11 @@ Git使用
     右键选择open git bash here，打开
     1、初始化
     git init
-    文件夹中会增加.git文件，如果没有，是文件夹设置中，查看选项里没有勾选隐藏项目
+    文件夹中会增加.git文件，如果没有，在文件夹设置中，查看选项里没有勾选隐藏项目
     2、查看
     ls 或者 ls -ah 、 ls -a、ls -h 都可以查看
     3、添加文件到仓库
-    git add 文件名   例如：git add note.txt  延展：git add 文件的前一个或者几个，再按tab键，自动完成
+    git add 文件名   例如：git add note.txt  延展：git add 文件名的前一个或者几个字母，再按tab键，自动完成
     git add .. 添加所有文件
     回车后没有响应，就是成功
     4、提交
@@ -42,17 +42,19 @@ Git使用
     git branch
     8、连接github
     git remote add origin https://github.com/dyh858/demo.git
-    查看github连接 的分支
+    查看github连接的远程分支
     git remote 
-    删除github连接的分支
+    删除github连接的远程分支
     git remote rm origin
     10、推送
     git push -u hello main
     11、克隆一个github到本地
 	git clone https://github.com/dyh858/demo.git
-	克隆下来的远程分支后，查看一下远程分支和本地分支
+	克隆下来的远程分支后，查看一下远程分支和本地分支，
+	git branch 结果 * main
+    git origin 结果 origin
 	12、从github拉取
-    git pull hello main
+    git pull 远程分支 本地分支  例如：git pull origin main
 	
     
    

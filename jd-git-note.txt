@@ -55,10 +55,73 @@ Git使用
     git origin 结果 origin
 	12、从github拉取
     git pull 远程分支 本地分支  例如：git pull origin main
-	
-    
-   
+	13、查看状态
+	git status
+	结果：
+	On branch main
+	Your branch is up to date with 'origin/main'.
 
+	Changes not staged for commit:
+	(use "git add <file>..." to update what will be committed)
+	(use "git restore <file>..." to discard changes in working directory)
+	modified:   jd-git-note.txt
+
+	no changes added to commit (use "git add" and/or "git commit -a")
+	
+	翻译：
+	在分支mian上：
+	您的分支是最新的'origin/main'。
+
+	未提交的更改:
+	(使用“git add <file>…”来更新将要提交的内容)
+	(使用"git restore <file>…"来丢弃工作目录中的更改)
+	修改:jd-git-note.txt
+
+	提交时不添加任何更改(使用"git add"和/或"git commit -a")
+		
+	以上界面表面，文件已修改，但没
+	
+	（1）git add jd-git-note.txt
+	查看状态 git status
+	结果：
+	On branch main
+	Your branch is up to date with 'origin/main'.
+
+	Changes to be committed:
+	(use "git restore --staged <file>..." to unstage)
+	modified:   jd-git-note.txt
+    
+	翻译：
+	
+   在分支mian上
+   您的分支是最新的'origin/main'。
+
+	要提交的更改:
+	(使用"git restore——stage <file>…"来卸载)
+	修改:jd-git-note.txt
+	
+	（2）git commit -m "change to satus“
+	结果：
+	[main ea0f72b] change to status
+    1 file changed, 8 insertions(+), 6 deletions(-)
+	
+	再次查看状态
+	git status
+	结果：
+	On branch main
+	Your branch is ahead of 'origin/main' by 1 commit.
+	  (use "git push" to publish your local commits)
+
+	nothing to commit, working tree clean
+
+	翻译
+	在分支mian上
+	你的分支领先于“origin/main”1次提交。
+	(使用“git push”来发布本地提交)
+
+	没有什么要提交的，工作树干净
+	
+	
 
 
 

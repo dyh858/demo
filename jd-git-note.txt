@@ -46,6 +46,8 @@ Git使用
     git remote 
     删除github连接的远程分支
     git remote rm origin
+    重新连接
+    git remote add hello https://github.com/dyh858/demo.git
     10、推送
     git push -u hello main
     11、克隆一个github到本地
